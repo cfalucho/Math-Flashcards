@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Math Practice Problems</title>
+    
+    </script>
+    <link href="css/style.css"rel="stylesheet">
+  </head>
+
+<body>
+    <h1>Math Flashcards</h1>
+    <!---tab links----->
+    <button class="tablink" onclick="openPage('Addition', this,'#5BC0EB')">Addition</button>
+    <button class="tablink" onclick="openPage('Subtraction', this,'#9BC53D')">Subtraction</button>
+    <button class="tablink" onclick="openPage('Multiplication', this,'#C3423F')">Multiplication</button>
+    <button class="tablink" onclick="openPage('Division', this,'#89A6FB')">Divison</button>
+
+    <div id="Addition" class="tabcontent">
+        <h3>Addition</h3>
+        <div class="container">
+            <div class="flex-container">
+                <div id="flex-item1" class="randomNum1">0</div>
+                <div id="flex-item">+</div>
+                <div id="flex-item" class="randomNum2">0</div>
+                <input id="addInput" maxlength="2" onfocus="this.placeholder=''"placeholder="Your answer" >
+            </div>
+        </div>
+        <div class="btn-container">
+            <button onclick="additionAnswer()">Generate</button>
+            <button onclick="additionSubmit()" id="addition">Submit</button">
+        </div>
+    </div>
+    <div id="Subtraction" class="tabcontent">
+        <h3>Subtract</h3>
+        <div class="container">
+            <div class="flex-container">
+                <div id="flex-item1" class="randomNum1" >0</div>
+                <div id="flex-item">-</div>
+                <div id="flex-item" class="randomNum2">0</div>
+                <input id="subtractInput" maxlength="2" onfocus="this.placeholder=''"placeholder="Your answer" >
+            </div>
+        </div>
+        <div class="btn-container">
+            <button onclick="subtractionAnswer()">Generate</button>
+            <button onclick="subractSubmit()" id="subtract">Submit</button>
+        </div>
+    </div>
+    <div id="Multiplication" class="tabcontent">
+        <h3>Multiply</h3>
+        <div class="container">
+            <div class="flex-container">
+                <div id="flex-item1" class="randomNum1" >0</div>
+                <div id="flex-item">x</div>
+                <div id="flex-item" class="randomNum2">0</div>
+                <input id="multiplyInput" maxlength="2" onfocus="this.placeholder=''"placeholder="Your answer" >
+            </div>
+        </div>
+        <div class="btn-container">
+            <button onclick="multiplyAnswer()">Generate</button>
+            <button onclick="multiplySubmit()" id="multiply">Submit</button>
+        </div>
+    </div>
+    <div id="Division" class="tabcontent">
+        <h3>Division</h3>
+        <div class="container">
+            <div class="flex-container">
+                <div id="flex-item1" class="topNumber">0</div>
+                <div id="flex-item">&divide;</div>
+                <div id="flex-item" class="bottomNumber">0</div>
+                <input id="divisionInput" maxlength="2" onfocus="this.placeholder=''"placeholder="Your answer" >
+            </div>
+        </div>
+        <div class="btn-container">
+            <button onclick="divisonAnswer()">Generate</button>
+            <button onclick="divisionSubmit()" id="division">Submit</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
